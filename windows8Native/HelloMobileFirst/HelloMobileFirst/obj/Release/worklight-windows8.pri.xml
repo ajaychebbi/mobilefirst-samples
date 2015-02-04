@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="worklight-windows8" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>ZH-HANT, ZH-HANS, RU, PT-BR, KO, JA, IT, HE, FR, ES, DE</Language>
+		</Qualifiers>
+		<ResourceMapSubtree name="worklight-windows8">
+			<ResourceMapSubtree name="NonUserFacing">
+				<NamedResource name="ACTIVITY_NULL_ERROR" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/ACTIVITY_NULL_ERROR">
+					<Candidate type="String">
+						<Value>ActivityType cannot be null</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CHALLENGE_HANDLER_NULL_ERROR" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/CHALLENGE_HANDLER_NULL_ERROR">
+					<Candidate type="String">
+						<Value>Cannot register 'null' challenge handler</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CONNECT_IN_PROGRESS_ERROR" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/CONNECT_IN_PROGRESS_ERROR">
+					<Candidate type="String">
+						<Value>A connect call is in progress. Unable to issue another connect call.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HEADER_IS_NULL" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/HEADER_IS_NULL">
+					<Candidate type="String">
+						<Value>Cannot add global header since headerKey is null. Pass a non-null value for headerKey.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="INVALID_REQUEST_METHOD" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/INVALID_REQUEST_METHOD">
+					<Candidate type="String">
+						<Value>Invalid request method provided to submitLoginForm. Specify POST or GET.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="INVALID_URI" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/INVALID_URI">
+					<Candidate type="String">
+						<Value>Invalid form URL provided. Provide a valid login URL.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="INVOKE_PROCEDURE_RUN_ERROR" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/INVOKE_PROCEDURE_RUN_ERROR">
+					<Candidate type="String">
+						<Value>Error during invocation of remote procedure, because responseListener parameter can't be null.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LOG_ACTIVITY_FAIL" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/LOG_ACTIVITY_FAIL">
+					<Candidate type="String">
+						<Value>Activity will not be logged in the IBM MobileFirst Platform server using logActivity() because of</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LOG_ACTIVITY_SUCCESS" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/LOG_ACTIVITY_SUCCESS">
+					<Candidate type="String">
+						<Value>logActivity success. Response from server is</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NO_CHALLENGE_HANDLER_ERROR" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/NO_CHALLENGE_HANDLER_ERROR">
+					<Candidate type="String">
+						<Value>No challenge handler found for realm</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NO_REALM_REGISTER_ERROR" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/NO_REALM_REGISTER_ERROR">
+					<Candidate type="String">
+						<Value>Application will exit because the challengeHandler parameter for registerChallengeHandler (challengeHandler) has a null realm property. Call this API with a valid reference to challenge handler.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WLCLIENT_ERROR" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/WLCLIENT_ERROR">
+					<Candidate type="String">
+						<Value>Unable to load wlclient.properties file. Add the wlclient.properties file to your project.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WLCLIENT_PARSE_ERROR" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/WLCLIENT_PARSE_ERROR">
+					<Candidate type="String">
+						<Value>Error parsing wlclient.properties.Ensure it is in the correct format having name/value pairs.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WLHOST_NOT_FOUND" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/WLHOST_NOT_FOUND">
+					<Candidate type="String">
+						<Value>wlServerHost property not found in wlclient.properties. Add the wlServerHost property to the wlclient.properties file.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WL_APP_ID_NOT_FOUND" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/WL_APP_ID_NOT_FOUND">
+					<Candidate type="String">
+						<Value>wlAppId property not found in wlclient.properties. Add the wlAppId property to the wlclient.properties file.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WL_APP_VERSION_NOT_FOUND" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/WL_APP_VERSION_NOT_FOUND">
+					<Candidate type="String">
+						<Value>wlAppVersion property not found in wlclient.properties. Add the wlAppVersion property to the wlclient.properties file.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WL_ENVIRONMENT_NOT_FOUND" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/WL_ENVIRONMENT_NOT_FOUND">
+					<Candidate type="String">
+						<Value>wlEnvironment property not found in wlclient.properties. Add the wlEnvironment property to the wlclient.properties file.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WL_PLATFORMVERSION_NOT_FOUND" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/WL_PLATFORMVERSION_NOT_FOUND">
+					<Candidate type="String">
+						<Value>wlPlatformVersion property not found in wlclient.properties. Add the wlPlatformVersion property to the wlclient.properties file.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WL_SERVER_CONTEXT_NOT_FOUND" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/WL_SERVER_CONTEXT_NOT_FOUND">
+					<Candidate type="String">
+						<Value>wlServerContext property not found in wlclient.properties. Add the wlServerContext property to the wlclient.properties file.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WL_SERVER_PORT_NOT_FOUND" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/WL_SERVER_PORT_NOT_FOUND">
+					<Candidate type="String">
+						<Value>wlServerPort property not found in wlclient.properties. Add the wlServerPort property to the wlclient.properties file.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WL_SERVER_PROTOCOL_NOT_FOUND" uri="ms-resource://worklight-windows8/worklight-windows8/NonUserFacing/WL_SERVER_PROTOCOL_NOT_FOUND">
+					<Candidate type="String">
+						<Value>wlServerProtocol property not found in wlclient.properties. Add the wlServerProtocol property to the wlclient.properties file.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="UserFacing">
+				<NamedResource name="ACCESS_DENIED" uri="ms-resource://worklight-windows8/worklight-windows8/UserFacing/ACCESS_DENIED">
+					<Candidate qualifiers="Language-ZH-HANT" type="String">
+						<Value>拒絕存取</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-ZH-HANS" type="String">
+						<Value>拒绝访问</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-RU" type="String">
+						<Value>Доступ запрещен</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-PT-BR" type="String">
+						<Value>Acesso Negado</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-KO" type="String">
+						<Value>액세스 거부됨</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-JA" type="String">
+						<Value>アクセスは拒否されました</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-IT" type="String">
+						<Value>Accesso negato</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-HE" type="String">
+						<Value>הגישה חסומה</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-FR" type="String">
+						<Value>Accès refusé</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-ES" type="String">
+						<Value>Acceso denegado</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-DE" type="String">
+						<Value>Zugriff verweigert</Value>
+					</Candidate>
+					<Candidate type="String">
+						<Value>Access Denied</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CLOSE" uri="ms-resource://worklight-windows8/worklight-windows8/UserFacing/CLOSE">
+					<Candidate qualifiers="Language-ZH-HANT" type="String">
+						<Value>關閉</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-ZH-HANS" type="String">
+						<Value>关闭</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-RU" type="String">
+						<Value>Закрыть</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-PT-BR" type="String">
+						<Value>Fechar</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-KO" type="String">
+						<Value>닫기</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-JA" type="String">
+						<Value>閉じる</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-IT" type="String">
+						<Value>Chiudi</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-HE" type="String">
+						<Value>סגירה</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-FR" type="String">
+						<Value>Fermer</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-ES" type="String">
+						<Value>Cerrar</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-DE" type="String">
+						<Value>Schließen</Value>
+					</Candidate>
+					<Candidate type="String">
+						<Value>Close</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UPGRADE" uri="ms-resource://worklight-windows8/worklight-windows8/UserFacing/UPGRADE">
+					<Candidate qualifiers="Language-ZH-HANT" type="String">
+						<Value>升級</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-ZH-HANS" type="String">
+						<Value>升级</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-RU" type="String">
+						<Value>Обновить</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-PT-BR" type="String">
+						<Value>Fazer Upgrade</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-KO" type="String">
+						<Value>업그레이드</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-JA" type="String">
+						<Value>アップグレード</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-IT" type="String">
+						<Value>Esegui l'upgrade</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-HE" type="String">
+						<Value>שדרוג </Value>
+					</Candidate>
+					<Candidate qualifiers="Language-FR" type="String">
+						<Value>Mettre à niveau</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-ES" type="String">
+						<Value>Actualizar</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-DE" type="String">
+						<Value>Upgrade</Value>
+					</Candidate>
+					<Candidate type="String">
+						<Value>Upgrade</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
