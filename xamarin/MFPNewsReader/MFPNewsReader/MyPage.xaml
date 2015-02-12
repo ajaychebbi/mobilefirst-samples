@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:NSContacten;assembly=NSContacten"
+    x:Class="MFPNewsReader.MyPage"
+    Title="Master Detail Example">
+
+    <MasterDetailPage.Master>
+      <ContentPage Padding="5, 25" Title="IBM Mobile First" BackgroundColor="#3498db">
+          <StackLayout Orientation="Vertical" Padding="0, 60, 0, 0">
+              <Label Text="IBM Mobile First" HorizontalOptions="Center" FontSize="Large" />
+              <StackLayout VerticalOptions="End" Padding="0, 60, 0, 40">
+              	<Button Text="Connect" HorizontalOptions="Center" TextColor="White" x:Name="btnConnect" />
+              	<Button Text="Invoke Procedure" HorizontalOptions="Center" TextColor="White" x:Name="btnInvokeProcedure" />
+              </StackLayout>
+          </StackLayout>
+        </ContentPage>
+
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage Padding="5, 25" BindingContext="{Binding DetailPage}">
+
+          <StackLayout Orientation="Vertical">
+	          <ListView ItemsSource="{Binding MyArticles}" RowHeight="100">
+	          	<ListView.ItemTemplate>
+	          		<DataTemplate>
+	          			<ViewCell>
+	          				<StackLayout>
+	          					<Label Text="{Binding ArticleTitle}" FontSize="Medium" TextColor="Blue"/>
+	          					<Label Text="{Binding ArticleText}" FontSize="Small" TextColor="Gray"/>
+	          				</StackLayout>
+	          			</ViewCell>
+	          		</DataTemplate>
+	          	</ListView.ItemTemplate>
+			  </ListView>
+          </StackLayout>
+
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
+
