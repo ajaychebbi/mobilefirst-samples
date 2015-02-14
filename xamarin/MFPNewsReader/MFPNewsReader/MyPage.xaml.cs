@@ -5,7 +5,7 @@ using System.Json;
 using Xamarin.Forms;
 
 using Worklight;
-
+//@author: ajaychebbi
 namespace MFPNewsReader
 {
 	public partial class MyPage : MasterDetailPage
@@ -39,6 +39,7 @@ namespace MFPNewsReader
 		{
 			//Invoke Procedure
 			Articles.Clear ();
+			//Params for the invocation
 			WorklightProcedureInvocationData proceduerParams = new WorklightProcedureInvocationData("SampleHTTPAdapter","getStories",new object[] { });
 
 			WorklightResponse resp = await MFPNewsReader.App.wlClient.InvokeProcedure(proceduerParams);

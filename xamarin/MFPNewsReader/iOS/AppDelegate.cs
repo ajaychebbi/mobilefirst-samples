@@ -6,6 +6,7 @@ using Foundation;
 using UIKit;
 //using Worklight.iOS;
 
+//@author ajaychebbi
 namespace MFPNewsReader.iOS
 {
 	[Register ("AppDelegate")]
@@ -16,7 +17,7 @@ namespace MFPNewsReader.iOS
 			global::Xamarin.Forms.Forms.Init ();
 
 			LoadApplication (new App ());
-			//Init MFP Client
+			//Init MFP Client. This is iOS specific
 			MFPNewsReader.App.wlClient = 
 				Worklight.Xamarin.iOS.WorklightClient.CreateInstance ();
 

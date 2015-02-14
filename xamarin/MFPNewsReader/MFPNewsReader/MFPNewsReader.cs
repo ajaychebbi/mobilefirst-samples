@@ -2,7 +2,7 @@
 
 using Xamarin.Forms;
 using Worklight;
-
+//@author: ajaychebbi
 namespace MFPNewsReader
 {
 	public class App : Application
