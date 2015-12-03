@@ -10,6 +10,7 @@
       <ContentPage Padding="5, 25" Title="IBM Mobile First" BackgroundColor="#3498db">
           <StackLayout Orientation="Vertical" Padding="0, 60, 0, 0">
               <Label Text="IBM Mobile First" HorizontalOptions="Center" FontSize="Large" />
+              <Label Text="rss feed from developer.ibm.com" HorizontalOptions="Center" FontSize="Small" />
               <StackLayout VerticalOptions="End" Padding="0, 60, 0, 40">
               	<Button Text="Connect" HorizontalOptions="Center" TextColor="White" x:Name="btnConnect" />
               	<Button Text="Invoke Procedure" HorizontalOptions="Center" TextColor="White" x:Name="btnInvokeProcedure" />
@@ -20,7 +21,7 @@
     </MasterDetailPage.Master>
 
     <MasterDetailPage.Detail>
-        <ContentPage Padding="5, 25" BindingContext="{Binding DetailPage}">
+        <ContentPage Padding="5, 25" BindingContext="{Binding DetailPage}" >
 
           <StackLayout Orientation="Vertical">
 	          <ListView ItemsSource="{Binding MyArticles}" RowHeight="100">
@@ -28,7 +29,7 @@
 	          		<DataTemplate>
 	          			<ViewCell>
 	          				<StackLayout>
-	          					<Label Text="{Binding ArticleTitle}" FontSize="Medium" TextColor="Blue"/>
+	          					<Label Text="{Binding ArticleTitle}" FontSize="Medium" TextColor="White"/>
 	          					<Label Text="{Binding ArticleText}" FontSize="Small" TextColor="Gray"/>
 	          				</StackLayout>
 	          			</ViewCell>

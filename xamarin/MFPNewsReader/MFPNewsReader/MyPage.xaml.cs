@@ -5,6 +5,7 @@ using System.Json;
 using Xamarin.Forms;
 
 using Worklight;
+using System.Diagnostics;
 //@author: ajaychebbi
 namespace MFPNewsReader
 {
@@ -35,9 +36,9 @@ namespace MFPNewsReader
 				DisplayAlert("Connection Status failed",resp.Message,"Close");
 			}
 		}
-		private async void InvokeProcedure()
+		private async void InvokeProcedureOld()
 		{
-			//Invoke Procedure
+			//Invoke Procedure - the old way
 			Articles.Clear ();
 			//Params for the invocation
 			WorklightProcedureInvocationData proceduerParams = new WorklightProcedureInvocationData("SampleHTTPAdapter", "getFeed", new object[] { });
@@ -58,6 +59,33 @@ namespace MFPNewsReader
 				DisplayAlert("Connection Status failed",resp.Message,"Close");
 			}
 		}
-	}
+        private async void InvokeProcedure()
+        {
+            //Invoke Procedure - the new REST way
+            Articles.Clear();
+            //hopefully I can integrate oAuth with this sample soon
+            Uri adapterMethod = new Uri(App.wlClient.ServerUrl+ "/adapters/SampleHTTPAdapter/getFeed");   
+            WorklightResourceRequest wlResReq = MFPNewsReader.App.wlClient.ResourceRequest(adapterMethod,"GET");
+            WorklightResponse resp = await wlResReq.Send();
+           
+            if (resp.Success)
+            {
+                JsonArray jsonArray = (JsonArray)resp.ResponseJSON["rss"]["channel"]["item"];
+                foreach (JsonObject title in jsonArray)
+                {
+                    System.Json.JsonValue titleString;
+                    title.TryGetValue("title", out titleString);
+                    System.Json.JsonValue itemString;
+                    title.TryGetValue("description", out itemString);
+                    Articles.Add(new Article(titleString, itemString));
+
+                }
+            }
+            else
+            {
+                DisplayAlert("Connection Status failed", resp.Message, "Close");
+            }
+        }
+    }
 }
 
