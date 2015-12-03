@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -15,7 +15,7 @@
     <AndroidApplication>True</AndroidApplication>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <AssemblyName>MFPNewsReader.Droid</AssemblyName>
-    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,6 +27,19 @@
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
     <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkSkip />
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis>
+    </AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <Debugger>Xamarin</Debugger>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+    <DevInstrumentationEnabled>True</DevInstrumentationEnabled>
+    <JavaMaximumHeapSize>512m</JavaMaximumHeapSize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -42,6 +55,14 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="Worklight.Android, Version=7.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Components\ibm-worklight-7.1.0.0\lib\android\Worklight.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Worklight.Xamarin.Android, Version=6.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Components\ibm-worklight-7.1.0.0\lib\android\Worklight.Xamarin.Android.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Android.Support.v4">
       <HintPath>..\packages\Xamarin.Android.Support.v4.19.1.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
@@ -58,12 +79,6 @@
       <HintPath>..\packages\Xamarin.Forms.1.3.1.6296\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
     <Reference Include="System.Json" />
-    <Reference Include="Worklight.Android">
-      <HintPath>..\Components\ibm-worklight-1.1.0\lib\android\Worklight.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="Worklight.Xamarin.Android">
-      <HintPath>..\Components\ibm-worklight-1.0.0\lib\android\Worklight.Xamarin.Android.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -94,8 +109,8 @@
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="ibm-worklight">
-      <Version>1.1.0</Version>
       <Visible>False</Visible>
+      <Version>7.1.0.0</Version>
     </XamarinComponentReference>
   </ItemGroup>
 </Project>
