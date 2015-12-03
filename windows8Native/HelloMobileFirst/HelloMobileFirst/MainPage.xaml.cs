@@ -95,7 +95,7 @@ namespace HelloMobileFirst
         private void BtnInvokeProcOnClick(object sender, RoutedEventArgs e)
         {
             //invoke a procedure on the server
-            WLProcedureInvocationData proceduerParams = new WLProcedureInvocationData("SampleAdapter","getStories");
+            WLProcedureInvocationData proceduerParams = new WLProcedureInvocationData("SampleHTTPAdapter","getFeed");
             WLRequestOptions options = new WLRequestOptions();
             WLResponseListener listener = new ResponseListener();
             wlClient.invokeProcedure(proceduerParams,listener,options);

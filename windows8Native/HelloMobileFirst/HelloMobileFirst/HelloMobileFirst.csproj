@@ -136,11 +136,17 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="AuthWinRT">
+      <HintPath>..\..\..\..\..\mfp-server\news\apps\newsReader\buildtarget\x86\AuthWinRT.winmd</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\..\..\..\..\worklightProjs\HelloMobileFirst\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\..\..\..\mfp-server\news\apps\newsReader\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpCompress">
+      <HintPath>..\..\..\..\..\mfp-server\news\apps\newsReader\SharpCompress.dll</HintPath>
     </Reference>
     <Reference Include="worklight-windows8">
-      <HintPath>..\..\..\..\..\..\..\worklightProjs\HelloMobileFirst\worklight-windows8.dll</HintPath>
+      <HintPath>..\..\..\..\..\mfp-server\news\apps\newsReader\buildtarget\x86\worklight-windows8.dll</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
