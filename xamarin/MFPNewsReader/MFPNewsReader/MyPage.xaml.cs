@@ -40,7 +40,7 @@ namespace MFPNewsReader
 			//Invoke Procedure
 			Articles.Clear ();
 			//Params for the invocation
-			WorklightProcedureInvocationData proceduerParams = new WorklightProcedureInvocationData("SampleHTTPAdapter","getStories",new object[] { });
+			WorklightProcedureInvocationData proceduerParams = new WorklightProcedureInvocationData("SampleHTTPAdapter", "getFeed", new object[] { });
 
 			WorklightResponse resp = await MFPNewsReader.App.wlClient.InvokeProcedure(proceduerParams);
 			if (resp.Success) {
